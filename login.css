@@ -15,7 +15,7 @@ body {
   /* For mobile phones: */
   #main-holder {
   width: 80%;
-  height: 80%;
+  height: 100%;
   display: grid;
   justify-items: center;
   align-items: center;
@@ -138,6 +138,15 @@ input[type=text], input[type=password] {
   width: 30%;
 }
 #B3{
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+}
+#B4{
   background-color: #04AA6D;
   color: white;
   padding: 14px 20px;
