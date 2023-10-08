@@ -1,0 +1,49 @@
+  
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="guest.css" />
+    <script>
+      function addNumbers() {
+        var first, second;
+
+        first = Number(document.getElementById("firstInput").value);
+        second = Number(document.getElementById("secondInput").value);
+
+        document.getElementById("result").value = first + second;
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+    <h1>Dear User/Guest</h1>
+    <h2>Please provide below details</h2>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+
+    <label for="text"><b>Battery capacity</b></label>
+    <input type="number" placeholder="Enter battery capacity" id="firstInput" min="5000" max="50000">
+    <label for="text"><b>current charge percentage</b></label>
+    <input type="number" placeholder=" Enter current charge percentage" id="secondInput" min="0%" max="100%">
+    
+     
+    <button onclick="addNumbers()">submit</button></div></br>
+    <label for="text"><b>Estimated charge time required</b></label>
+    <input type="number" placeholder="Estimated charge time required" id="result">
+
+    <label for="text"><b>Account of units needed</b></label>
+    <input type="text" placeholder="Amounts in units needed" name="numbers">
+
+    <label for="text"><b>Total estimated bill amounts</b></label>
+    <input type="text" placeholder="TOtal esitmated bill amounts" name="numbers" >
+
+    <hr>
+
+    <p>Please confirm to route to payment page<a class="paymentbtn" href="payment.html"> checkout </a>.</p>
+    
+  </body>
+
+
+
+
+
+
