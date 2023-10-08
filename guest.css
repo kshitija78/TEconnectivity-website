@@ -16,12 +16,11 @@ input[type=text], input[type=password], input[type=number] {
 }
 
 
-.paymentbtn:link{
+.paymentbtn{
 
   
   background-color: #f44336;
   color: white;
-  padding: 14px 25px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
