@@ -103,3 +103,11 @@ body {
     margin: 5px 30px;
     background-color: rgb(71, 177, 61);
 }
+#B3{ 
+background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 30%; }
