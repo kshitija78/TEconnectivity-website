@@ -9,7 +9,25 @@
         first = Number(document.getElementById("firstInput").value);
         second = Number(document.getElementById("secondInput").value);
 
-        document.getElementById("result").value = first + second;
+        document.getElementById("result").value = first / second;
+      }
+
+      function addNumbers1() {
+        var first, second;
+
+        first = Number(document.getElementById("firstInput").value);
+        second = Number(document.getElementById("secondInput").value);
+
+        document.getElementById("result1").value = (first * second)/1000;
+      }
+
+      function addNumbers2() {
+        var estimatecharge, unitneeded;
+
+        estimatecharge = Number(document.getElementById("result").value);
+        unitneeded = Number(document.getElementById("result1").value);
+
+        document.getElementById("result2").value = estimatecharge * unitneeded;
       }
     </script>
   </head>
@@ -26,24 +44,21 @@
     <input type="number" placeholder=" Enter current charge percentage" id="secondInput" min="0%" max="100%">
     
      
-    <button onclick="addNumbers()">submit</button></div></br>
+    <button onclick="addNumbers(), addNumbers1(), addNumbers2()">submit</button></div></br>
     <label for="text"><b>Estimated charge time required</b></label>
     <input type="number" placeholder="Estimated charge time required" id="result">
 
     <label for="text"><b>Account of units needed</b></label>
-    <input type="text" placeholder="Amounts in units needed" name="numbers">
+    <input type="number" placeholder="Amounts in units needed"  id="result1">
 
     <label for="text"><b>Total estimated bill amounts</b></label>
-    <input type="text" placeholder="TOtal esitmated bill amounts" name="numbers" >
+    <input type="text" placeholder="TOtal esitmated bill amounts"  id="result2" >
 
     <hr>
 
     <p>Please confirm to route to payment page<a class="paymentbtn" href="payment.html"> checkout </a>.</p>
     
   </body>
-
-
-
 
 
 
