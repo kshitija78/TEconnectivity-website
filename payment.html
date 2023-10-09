@@ -12,12 +12,16 @@
         output.innerText = value;
       };
     function myFunction() {
+        
 
-         alert("PAYMENT DONE successfully !");  
-         alert(true);
+        alert("PAYMENT DONE successfully !");  
+        //alert(true);
         location.reload();
+     }
+ 
+     
          
-    }
+    
 
     </script>
     <meta charset="UTF-8" />
@@ -28,6 +32,7 @@
 </head>
  
 <body>
+    <form action="successPage.html">
     <div class="container">
         <div class="main-content">
             <p class="text">it's time to payment</p>
@@ -52,31 +57,31 @@
  
             <div class="card-number">
                 <label> Card Number </label>
-                <input type="text"
+                <input type="text" id="cardnumber" 
                        class="card-number-field"
-                       placeholder="###-###-###" />
+                       placeholder="###-###-###" required/>
             </div>
             <br />
             <div class="date-number">
                 <label> Expiry Date </label>
-                <input type="text"
+                <input type="text" id="date" 
                        class="date-number-field"
-                       placeholder="DD-MM-YY" />
+                       placeholder="DD-MM-YY" required/>
             </div>
  
             <div class="cvv-number">
                 <label> CVV number </label>
                 <input type="text"
                        class="cvv-number-field"
-                       placeholder="xxx" />
+                       placeholder="xxx" required/>
             </div>
             <div class="nameholder-number">
                 <label> Card Holder name </label>
                 <input type="text"
                        class="card-name-field"
-                       placeholder="Enter your Name" />
+                       placeholder="Enter your Name"  required />
             </div>
-            <button type="submit"class="submit-now-btn" onclick="myFunction()"> process payment </button>
+            <button type="submit"class="submit-now-btn"  > process payment </button>
         </div>
         <a id="B3" href="login.html">go to login page</a>
     </div>
