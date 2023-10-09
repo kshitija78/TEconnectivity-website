@@ -27,7 +27,7 @@
         estimatecharge = Number(document.getElementById("result").value);
         unitneeded = Number(document.getElementById("result1").value);
 
-        document.getElementById("result2").value = estimatecharge * unitneeded;
+        document.getElementById("result2").value = (estimatecharge * unitneeded)/100;
       }
         function submitValue() {
         // Get the value entered by the user
@@ -58,13 +58,13 @@
      
     <button class="paymentbtn" onclick="addNumbers(), addNumbers1(), addNumbers2()">submit</button></div></br>
     <label for="text"><b>Estimated charge time required</b></label>
-    <input type="number" placeholder="Estimated charge time required" id="result">
+    <input type="number" placeholder="Estimated charge time required" id="result" readonly >
 
     <label for="text"><b>Account of units needed</b></label>
-    <input type="number" placeholder="Amounts in units needed"  id="result1">
+    <input type="number" placeholder="Amounts in units needed"  id="result1" readonly >
 
     <label for="text"><b>Total estimated bill amounts</b></label>
-    <input type="text" placeholder="TOtal esitmated bill amounts"  id="result2" >
+    <input type="text" placeholder="TOtal esitmated bill amounts"  id="result2" readonly >
 
     <hr>
 
